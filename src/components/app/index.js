@@ -1,8 +1,10 @@
 import React, {Component, PropTypes} from 'react';
 import './index.less';
-const prefixCls = 'Header';
+import Header from '../header/index';
+import Footer from '../footer/index';
+const prefixCls = 'App';
 
-export default class Header extends Component {
+export default class App extends Component {
   static propTypes = {};
 
   constructor(props) {
@@ -15,7 +17,15 @@ export default class Header extends Component {
   render() {
     return (
       <div className={`${prefixCls}`}>
-        {this.props.children}
+        <div className={`${prefixCls}-header`}>
+          <Header/>
+        </div>
+        <div className={`${prefixCls}-body`}>
+          {this.props.children}
+        </div>
+        <div className={`${prefixCls}-footer`}>
+          <Footer/>
+        </div>
       </div>);
   }
 }

@@ -1,8 +1,8 @@
 import React, {Component, PropTypes} from 'react';
 import './index.less';
-const prefixCls = 'App';
+const prefixCls = 'Header';
 
-export default class App extends Component {
+export default class Header extends Component {
   static propTypes = {};
 
   constructor(props) {
