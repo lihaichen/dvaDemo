@@ -8,7 +8,14 @@
     "transform-runtime",
     "add-module-exports",
     "transform-decorators-legacy",
-    "transform-react-display-name"
+    "transform-react-display-name",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ]
   ],
   "env": {
     "development": {
