@@ -1,8 +1,8 @@
 import React, {Component, PropTypes} from 'react';
 import './index.less';
-const prefixCls = 'Header';
+const prefixCls = 'Footer';
 
-export default class Header extends Component {
+export default class Footer extends Component {
   static propTypes = {};
 
   constructor(props) {
@@ -15,7 +15,6 @@ export default class Header extends Component {
   render() {
     return (
       <div className={`${prefixCls}`}>
-        {this.props.children}
       </div>);
   }
 }
